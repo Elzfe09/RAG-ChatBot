@@ -31,6 +31,7 @@ Create an intelligent chatbot that can accurately respond to:
 3. **Vector Storage** – Store semantic vectors in a vector database  
 4. **Semantic Retrieval** – Match user questions to related document segments  
 5. **LLM Integration** – Combine retrieved context with an LLM for natural responses
+6. **Adding History Chat** - ensure the conversation keep ongoing like human chat 
 
 ### 🔹 LangGraph Integration
 Using **LangGraph**, the chatbot pipeline is modularized into:
@@ -45,7 +46,7 @@ This structure makes the system **more flexible, debuggable, and expandable** co
 
 ## 🧠 Agentic Tooling
 In addition to RAG, an **agentic retriever tool** is implemented using `create_retriever_tool()`.  
-This allows the chatbot to dynamically invoke retrieval actions (e.g., searching policy content) **without hard-coded function calls**, creating a more **autonomous and adaptive** interaction loop.
+This allows the chatbot to dynamically invoke retrieval actions (e.g., searching policy content) **without hard-coded function calls**, creating a more **autonomous and adaptive** interaction loop. Also allow to give different response on each user without overwhelmed, since give a unique code ID identifier
 
 ---
 
